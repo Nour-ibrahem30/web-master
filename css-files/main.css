@@ -49,6 +49,22 @@ html{
     scroll-behavior: smooth;
 }
 /* End global rules */
+/*Arrow Fixed */
+.arrow{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    position: fixed;
+    left: 15px;
+    bottom: 50px;
+    z-index: 2;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: var(--main-color-alt);
+    color: white;
+}
 /* Start Header Styling */
 .head {
     width: 100%;
@@ -2098,19 +2114,3 @@ footer  .copy-right span{
     font-weight: bold;
 }
 /* End footer */
-/*Arrow Fixed */
-.arrow{
-    display: flex;
-    justify-content: flex-end;
-    font-size: 30px;
-    color: black;
-    font-weight: bold;
-    position: fixed;
-    left: 15px;
-    bottom: 50px;
-    z-index: 2;
-    padding: 8px;
-    border-radius: 5px;
-    background-color: var(--main-color-alt);
-    color: white;
-}
