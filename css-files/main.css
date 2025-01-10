@@ -166,7 +166,7 @@ html{
     border-radius: 10px;
     object-fit: cover;
 }
-
+/* Responsive Design */
 @media (max-width: 767px) {
     .head ul .active .menu img {
         display: none;
@@ -192,7 +192,6 @@ html{
     margin-right: 8px;
 }
 
-/* تحسين تخطيط القائمة */
 .head ul .active .menu .small-menu {
     width: 100%;
     display: flex;
@@ -224,6 +223,7 @@ html{
     background-color: var(--section-color);
     padding-bottom: var(--section-padding);
 }
+/* Responsive Design */
 @media(max-width:360px){
     .section{
         display: flex;
@@ -243,6 +243,7 @@ html{
     position: absolute;
     transform: rotate(-3deg);
 }
+/* Responsive Design */
 @media(max-width:767px){
     .section:before{
         display: none;
@@ -270,6 +271,7 @@ html{
     animation: up-Down 5s linear infinite;
     -webkit-animation: up-Down 5s linear infinite;
 }
+/* Responsive Design */
 @media(max-width:991px){
     .section img{
         display: none;
@@ -303,6 +305,7 @@ html{
     animation: go-down 1s linear infinite;
     -webkit-animation: go-down 1s linear infinite;
 }
+/* Responsive Design */
 @media(max-width:767px){
     .go-down i{
         display: none;
@@ -326,21 +329,24 @@ html{
         top: 150px;
         transition: var(--main-transition);
 }
-    @keyframes go-down{
-        70%{
-            top: 170px;
-        }
-        100%{
-            top: 190px;
-        }
+/* Start Animation */
+@keyframes go-down{
+    70%{
+        top: 170px;
+    }
+    100%{
+        top: 190px;
     }
 }
+}
+/* Start Animation */
 /* End section */
 /* Start articles */
 .articles{
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
 }
+/* Responsive Design */
 @media(max-width:360px){
     .articles{
         width: 68vh;
@@ -467,6 +473,7 @@ hr{
     background-color: var(--section-color);
     width: 100%;
 }
+/* Responsive Design */
 @media(max-width:360px){
     .Gallery{
         width: 68vh;
@@ -540,6 +547,7 @@ hr{
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
 }
+/* Responsive Design */
 @media(max-width:360px){
     .Features{
         width: 68vh;
@@ -749,6 +757,7 @@ hr{
     padding-bottom: var(--section-padding);
     background-color: var(--section-color);
 }
+/* Responsive Design */
 @media(max-width:360px){
     .Testimonials{
         width: 68vh;
@@ -856,6 +865,7 @@ hr{
     padding-top:var(--section-padding);
     padding-bottom: var(--section-padding);
 }
+/* Responsive Design */
 @media(max-width:360px){
     .Team-Members{
         width: 68vh;
@@ -973,13 +983,14 @@ hr{
 .Team-Members .parent-child .text  p{
     color: var(--color-paragraph);
 }
-/* EndTeam Members */
+/* End Team Members */
 /* start Services */
 .Services{
     padding-top:var(--section-padding);
     padding-bottom: var(--section-padding);
     background-color: var(--section-color);
 }
+/* Responsive Design */
 @media(max-width:360px){
     .Services{
         width: 68vh;
@@ -1064,6 +1075,7 @@ hr{
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
 }
+/* Responsive Design */
 @media(max-width:360px){
     .skills{
         width: 68vh;
@@ -1126,6 +1138,7 @@ hr{
     display:flex;
     gap:50px;
 }
+/* Responsive Design */
 @media(max-width:767px){
     .our-skills{
         gap: 0px;
@@ -1147,6 +1160,7 @@ hr{
     background-color: #ccc;
     height: 30px;
 }
+/* Responsive Design */
 @media(max-width:919px){
     .skills .our-skills .numbers div{
         width:350px
@@ -1260,6 +1274,7 @@ hr{
     padding-bottom: var(--section-padding);
     background-color: var(--section-color);
 }
+/* Responsive Design */
 @media(max-width:360px){
     .How-it-works{
         width: 68vh;
@@ -1330,6 +1345,7 @@ hr{
     flex-direction: column;
     margin-left: 100px;
 }
+/* Responsive Design */
 @media(max-width:1024px){
     .How-it-works .content .parent-box{
         margin-left: 0;
@@ -1344,6 +1360,7 @@ hr{
     z-index: 1;
     margin: auto;
 }
+/* Responsive Design */
 @media(max-width:1024px){
     .How-it-works .content .parent-box .box{
         width: 380px;
@@ -1383,6 +1400,7 @@ hr{
 .How-it-works .content .parent-box .box img{
     height: 70px;
 }
+/* Responsive Design */
 @media(max-width:991px){
     .How-it-works .content .img img{
         display: none;
@@ -1402,6 +1420,7 @@ hr{
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
 }
+/* Responsive Design */
 @media(max-width:360px){
 .Latest-Events{
         width: 68vh;
@@ -1463,6 +1482,7 @@ hr{
 .Latest-Events .img img{
     height: 450px;
 }
+/* Responsive Design */
 @media(max-width:991px){
     .Latest-Events .img img{
         display: none;
@@ -1475,6 +1495,7 @@ hr{
     margin-left: 5rem;
     display: grid;
 }
+/* Responsive Design */
 @media(max-width:991px){
     .Latest-Events .content .info{
         margin:auto;
@@ -1487,6 +1508,7 @@ hr{
     margin-right: 45px;
     gap: 15px;
 }
+/* Responsive Design */
 @media(max-width:991px){
     .Latest-Events .content .big-info{
         margin:auto;
@@ -1534,6 +1556,7 @@ hr{
 .Latest-Events .text{
     text-align: center;
 }
+/* Responsive Design */
 @media(max-width:991px){
     .Latest-Events .text{
         margin-top:30px;
@@ -1562,6 +1585,7 @@ hr{
     border-color: black;
     padding: 10px;
 }
+/* Responsive Design */
 @media(max-width:991px){
     .Latest-Events .inputs input{
         margin:auto;
@@ -1578,6 +1602,7 @@ hr{
     font-size: 18px;
     font-weight: bold;
 }
+/* Responsive Design */
 @media(max-width:991px){
     .Latest-Events .inputs button{
         margin:auto;
@@ -1590,6 +1615,7 @@ hr{
     padding-bottom:var(--section-padding);
     background-color: var(--section-color);
 }
+/* Responsive Design */
 @media(max-width:360px){
     .Pricing-Plans{
             width: 68vh;
@@ -1721,6 +1747,7 @@ hr{
 .Pricing-Plans .boxs .box:nth-child(2){
     margin-top: -30px;
 }
+/* Responsive Design */
 @media(max-width:1024px){
     .Pricing-Plans .boxs .box:nth-child(2){
         margin-top: 0;
@@ -1742,6 +1769,7 @@ hr{
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
 }
+/* Responsive Design */
 @media(max-width:360px){
     .top-video{
             width: 68vh;
@@ -1752,6 +1780,7 @@ hr{
     border: 1px solid #ccc;
     padding-left: 9px;
 }
+/* Responsive Design */
 @media(max-width:991px){
     .top-video .player{
         display: block;
@@ -1792,6 +1821,7 @@ hr{
     height: 480px;
     margin-bottom: 140px;
 }
+/* Responsive Design */
 @media(max-width:991px){
     .top-video .player .video-content img{
         height: 300px;
@@ -1802,6 +1832,7 @@ hr{
     background-color: #ccc;
     padding: 10px;
 }
+/* Responsive Design */
 @media(max-width:991px){
     .top-video .player .video-content{
         width: fit-content;
@@ -1821,6 +1852,7 @@ hr{
 .document{
     padding-top: var(--section-padding);
 }
+/* Responsive Design */
 @media(max-width:360px){
     .document{
             width: 68vh;
@@ -1830,6 +1862,7 @@ hr{
     display: flex;
     align-items: center;
 }
+/* Responsive Design */
 @media(max-width:991px){
     .document .content-document{
         flex-wrap: wrap;
@@ -1845,6 +1878,7 @@ hr{
     color: white;
     height: 45rem;
 }
+/* Responsive Design */
 @media(max-width:991px){
     .document .imgs{
         width: 100%;
@@ -1922,6 +1956,7 @@ footer{
     padding-bottom:30px;
     background-color: #191919;
 }
+/* Responsive Design */
 @media(max-width:360px){
     footer{
             width: 68vh;
@@ -1939,6 +1974,7 @@ footer .parent-box{
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
 }
+/* Responsive Design */
 @media(max-width:991px){
 
     footer .parent-box{
@@ -1988,6 +2024,7 @@ footer .parent-box .box-one ul li:hover .three{
     background-color: red;
     color: white;
 }
+/* Responsive Design */
 @media(max-width:991px){
     footer .parent-box .box-three{
         margin: auto;
@@ -2003,6 +2040,7 @@ footer .parent-box .box-four img{
     margin: 9px;
     border: 3px solid white;
 }
+/* Responsive Design */
 @media(max-width:991px){
     footer .parent-box .box-four img{
         margin: 0px;
@@ -2020,6 +2058,7 @@ footer .parent-box .box-two hr{
     margin-left: 15px;
     color: #b9b9b9;
 }
+/* Responsive Design */
 @media(max-width:991px){
     footer .parent-box .box-two hr{
     width: 100%;
@@ -2058,7 +2097,8 @@ footer  .copy-right span{
     font-weight: bold;
 }
 /* End footer */
-body .arrow{
+\\ Arrow Fixed
+.arrow{
     display: flex;
     justify-content: flex-end;
     font-size: 30px;
