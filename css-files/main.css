@@ -48,121 +48,173 @@ html{
     scroll-behavior: smooth;
 }
 /* End global rules */
-/* start-head*/
-.head{
-    margin: 10px;
+/* Start Header Styling */
+.head {
+    width: 100%;
+    padding: 7px 0 15px;
 }
-@media(max-width:767px){
-    .head{
-        width: 100%;
-    }
-}
-.head .links{
+
+.head .links {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    position: relative;
+    gap: 20px;
+    flex-wrap: wrap;
 }
-@media(max-width:767px){
-    .head .links{
-        flex-wrap: wrap;
+/* Responsive Design */
+@media (max-width: 767px) {
+.head .links  {
+    justify-content: space-around;
+    gap: 20px;
     }
 }
-.head .links a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 26px;
-    height: 72px;
-    font-weight: bold;
-    text-decoration: none;
+.head .links .Elzero {
+    font-size: 30px;
     color: var(--main-color);
+    text-decoration: none;
+    font-weight: bold;
 }
-@media(max-width:767px){
-    .head .links a{
-        width: 100%;
-    }
-}
-.head .links ul{
+
+/* Navigation Links Styling */
+.head .links .first-list {
     display: flex;
-    font-size: 20px;
-    font-weight: 600;
+    align-items: center;
     position: relative;
 }
-@media(max-width:767px){
-    .head .links ul{
-        margin: auto;
-    }
-}
-.head .links ul li{
-    padding: 20px;
+
+.head .links .first-list li {
+    margin-right: 30px;
     position: relative;
-    overflow: hidden;
-    font-size: 18px;
+    text-decoration: none;
     color: black;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s ease;
 }
-@media(max-width:767px){
-    .head .links li{
-        font-size: 14px;
-        padding: 15px 13px;
-    }
-}
-.head .links li:before{
+
+.head .links .first-list a li::before {
     content: '';
     position: absolute;
-    width: 100%;
-    height: 4px;
-    background-color: var(--main-color);
-    top: 0;
-    left: -100%;
+    background-color: var(--main-color-alt);
+    top: -16px;
+    right: 100%;
+    width: 0;
+    height: 5px;
     transition: var(--main-transition);
 }
-.head .links li:hover{
+
+.head .links .first-list li:hover::before {
+    width: 100%;
+    right: 0;
+}
+
+.head .links ul a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    .head .links ul li {
+        margin-right: 10px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+/* Dropdown Menu Styling */
+.head ul li .menu {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    transition: all 0.5s ease;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 10;
+    background-color: white;
+    padding: 16px;
+    width: 60rem;
+    height: 22rem;
+    border-bottom: 5px solid var(--main-color-alt);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    pointer-events: none;
+}
+/* Responsive Design */
+@media (max-width: 991px) {
+    .head ul li .menu {
+        width: 51rem;
+        margin-right: -5rem;
+    }
+}
+/* Responsive Design */
+@media (max-width: 767px) {
+    .head ul li .menu {
+        width: 16rem;
+        height: fit-content;
+        margin-right: 0;
+    }
+}
+.head ul .active:hover .menu {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+}
+
+.head ul .active .menu img {
+    height: 14rem;
+    width: 23rem;
+    margin-top: 6rem;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+@media (max-width: 767px) {
+    .head ul .active .menu img {
+        display: none;
+    }
+}
+
+/* Menu Items Styling */
+.head ul .active .menu li {
+    margin-bottom: 40px;
+    color: var(--main-color-alt);
+}
+
+.head ul .active .menu li a {
+    color: var(--main-color-alt);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.head ul .active .menu li a:hover {
     color: var(--main-color);
 }
-.head .links li:hover::before{
-    left: 0;
+.head ul .active .menu li a i {
+    margin-right: 8px;
 }
-.head .links .big-menu{
-    display: none ;
-    position:absolute ;
-    z-index: 1;
-}
-.head .links .active:hover .big-menu{
+
+/* تحسين تخطيط القائمة */
+.head ul .active .menu .small-menu {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: white;
-    position: relative;
-    top: 0em;
-    right: 0em;
-    height: inherit;
-    z-index: 2;
-    border-bottom: 5px solid var(--main-color);
-}
-.head .links .big-menu .menu{
-    display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    width: 250px;
 }
-.head .links .big-menu .menu >img{
-    margin: 20px;
+
+.head ul .active .menu .small-menu .Big-menu {
+    margin-top: 10px;
 }
-.head .links .big-menu  .menu li > i{
-    font-size:20px;
-    color: var(--main-color);
-    margin-right: 10px;
-    padding: 5px;
+/* Keyframes for Smooth Animations */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
-.head .links .big-menu  .menu li {
-    padding: 20px;
-    position: relative;
-    overflow: hidden;
-    font-size: 20px;
-    font-weight: bold;
-    color: var(--main-color);
-}
-/* End Head */
+/* End Header Styling */
 /* start section */
 .section{
     width: 100%;
@@ -205,6 +257,11 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@media(max-width:991px){
+    .section .content{
+        text-align: center;
+    }
 }
 .section img{
     height: 350px;
@@ -1067,7 +1124,12 @@ hr{
 }
 .our-skills{
     display:flex;
-    gap:25px;
+    gap:50px;
+}
+@media(max-width:767px){
+    .our-skills{
+        gap: 0px;
+    }
 }
 @media(max-width:991px){
     .our-skills .img img{
@@ -1081,7 +1143,7 @@ hr{
     margin: auto;
 }
 .skills .our-skills .numbers div{
-    width: 500px;
+    width: 400px;
     background-color: #ccc;
     height: 30px;
 }
@@ -1996,3 +2058,18 @@ footer  .copy-right span{
     font-weight: bold;
 }
 /* End footer */
+body .arrow{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    position: fixed;
+    left: 15px;
+    bottom: 50px;
+    z-index: 2;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: var(--main-color-alt);
+    color: white;
+}

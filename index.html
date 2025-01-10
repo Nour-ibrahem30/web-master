@@ -14,39 +14,66 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="arrow-fixed">
+            <a href="#head"><i class="fa-solid fa-arrow-up-long arrow"></i></a>
+        </div>
     <!-- start head -->
-    <div class="head">
+    <div class="head" id="head">
         <div class="container">
             <div class="links">
-                <a href="">Elzero</a>
-                <ul>
-                    <a href="#Articles"><li>Articles</li></a>
-                    <a href="#Gallery"><li>Gallery</li></a>
-                    <a href="#Features"><li>Features</li></a>
-                    <a href="#"><li class="active">Other links
-                    <!-- start mega menu -->
-                    <div class="big-menu">
-                        <img src="./imges/megamenu.png" alt="">
-                        <ul class="menu">
-                            <li><i class="fa-solid fa-comments"></i>testimonials</li>
-                            <li><i class="far fa-user fa-fw"></i>team members</li>
-                            <li><i class="far fa-building fa-fw"></i>services</li>
-                            <li><i class="far fa-check-circle fa-fw"></i>our skills</li>
-                            <li><i class="far fa-clipboard fa-fw"></i> How it works</li>
-                        </ul>
-                        <ul class="menu">
-                            <li><i class="far fa-calendar-alt fa-fw"></i>Events</li>                          
-                            <li><i class="fas fa-server fa-fw"></i>pricing plans</li>
-                            <li><i class="far fa-play-circle fa-fw"></i> top video</li>
-                            <li><i class="far fa-chart-bar fa-fw"></i>stats</li>
-                            <li><i class="fas fa-percent fa-fw"></i>Request A Discount</li>
-                        </ul>
-                    </li>
-                </a>
-                        <!-- End mega menu -->
-                    </div>
-                </ul>
-            </div>
+                <a href="#" class="Elzero">Elzero</a>
+                    <ul class="first-list">
+                        <a href="#Articles"><li>Articles</li></a>
+                        <a href="#Gallery"><li>Gallery</li></a>
+                        <a href="#Features"><li>Features</li></a>
+                        <li class="active">Other links
+                            <div class="menu">
+                                <div class="small-menu">
+                                    <img src="./imges/megamenu.png" alt="">
+                                    <div class="Big-menu">
+                                        <ul class="second-list">
+                                            <li>
+                                                <a href="#Testimonials"><i class="far fa-comments fa-fw"></i> Testimonials</a>
+                                            </li>
+                                            <li>
+                                                <a href="#team"><i class="far fa-user fa-fw"></i> Team Members</a>
+                                            </li>
+                                            <li>
+                                                <a href="#services"><i class="far fa-building fa-fw"></i> Services</a>
+                                            </li>
+                                            <li>
+                                                <a href="#our-skills"><i class="far fa-check-circle fa-fw"></i> Our Skills</a>
+                                            </li>
+                                            <li>
+                                                <a href="#work-steps"><i class="far fa-clipboard fa-fw"></i> How It Works</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="Big-menu">
+                                        <ul>
+                                        <li>
+                                            <a href="#work-steps"><i class="far fa-clipboard fa-fw"></i> How It Works</a>
+                                        </li>
+                                        <li>
+                                            <a href="#pricing"><i class="fas fa-server fa-fw"></i> Pricing Plans</a>
+                                        </li>
+                                        <li>
+                                        <a href="#video"><i class="far fa-play-circle fa-fw"></i> Top Videos</a>
+                                        </li>
+                                        <li>
+                                            <a href="#stats"><i class="far fa-chart-bar fa-fw"></i> Stats</a>
+                                        </li>
+                                        <li>
+                                            <a href="#discount"><i class="fas fa-percent fa-fw"></i> Request A Discount</a>
+                                        </li>
+                                    </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+        </div>
 </div>
 <!-- End head -->
     <!-- start section -->
@@ -68,7 +95,7 @@
 </div>
 <!-- End section -->
 <!-- Start articles -->
-<div class="articles" id="articles">
+<div class="articles" id="Articles">
     <div class="container">
         <div class="special">Articles</div>
             <div class="box">
@@ -172,7 +199,7 @@
     </div>
 <!-- End arctics -->
 <!-- Start Gallery -->
-    <div class="Gallery">
+    <div class="Gallery" id="Gallery">
         <div class="container">
             <div class="special">Gallery</div>
             <div class="parent">
@@ -329,7 +356,7 @@
     </div>
 <!-- End Testimonials -->
 <!--start Team Members -->
-<div class="Team-Members" id="Team-Members">
+<div class="Team-Members" id="team">
     <div class="container">
         <div class="special">Team Members</div>
         <div class="parent-child">
@@ -555,7 +582,7 @@
 </div>
 <!-- End Services -->
 <!-- start Our skills -->
-<div class="skills">
+<div class="skills" id="our-skills">
     <div class="container">
         <div class="special">skills</div>
         <div class="our-skills">
@@ -581,7 +608,7 @@
 </div>
 <!-- End Our skills -->
 <!-- start How it works -->
-<div class="How-it-works">
+<div class="How-it-works" id="work-steps">
     <div class="container">
         <div class="special">How It Works ?</div>
         <div class="content">
@@ -660,7 +687,7 @@
     </div>
 <!-- End Latest Events -->
 <!-- strat Pricing Plans -->
-<div class="Pricing-Plans">
+<div class="Pricing-Plans" id="pricing">
     <div class="container">
         <div class="special">Pricing Plans</div>
             <div class="boxs">
@@ -719,7 +746,7 @@
 </div>
 <!-- End Pricing Plans -->
 <!-- Top Videos -->
-    <div class="top-video">
+    <div class="top-video" id="video">
         <div class="container">
             <div class="special">top video</div>
             <div class="player">
@@ -768,7 +795,7 @@
     </div>
 <!-- End Videos -->
 <!-- Start document -->
-<div class="document">
+<div class="document" id="discount">
         <div class="content-document">
             <div class="imgs">
                 <div class="content">
