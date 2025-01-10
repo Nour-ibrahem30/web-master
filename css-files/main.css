@@ -26,6 +26,7 @@ ul{
     margin-left: auto;
     margin-right: auto;
 }
+/* Responsive Design */
 /* small */
 @media(min-width:768px){
     .container{
@@ -2097,7 +2098,7 @@ footer  .copy-right span{
     font-weight: bold;
 }
 /* End footer */
-\\ Arrow Fixed
+/*Arrow Fixed */
 .arrow{
     display: flex;
     justify-content: flex-end;
