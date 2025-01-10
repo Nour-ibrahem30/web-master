@@ -1,0 +1,1 @@
+    window.alert("Hello dear users, if you are satisfied with a nice design, it is better to use your computer Thank you")
